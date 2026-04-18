@@ -1,6 +1,6 @@
 import { useEffect, useState, useRef } from "react";
 import { FaChevronLeft, FaChevronRight, FaStar } from "react-icons/fa";
-import "./ReviewSlider.css";
+import "./Reviewslider.css";
 import { db } from "../firebase";
 import { collection, getDocs, query, orderBy, limit } from "firebase/firestore";
 
