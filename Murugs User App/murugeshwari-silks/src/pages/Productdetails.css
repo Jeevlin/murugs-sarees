@@ -1,0 +1,299 @@
+/* LAYOUT */
+
+.pd-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+  background: white;
+}
+
+/* DESKTOP */
+@media (min-width: 768px) {
+  .pd-container {
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+  }
+
+  .pd-info {
+    position: sticky;
+    top: 100px;
+  }
+}
+.pd-image-wrapper {
+  position: relative;
+}
+
+/* ARROWS */
+.pd-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-210%);
+  background: rgba(0, 0, 0, 0.4);
+  color: white;
+  border: none;
+  font-size: 20px;
+  padding: 10px 14px;
+  cursor: pointer;
+  border-radius: 50%;
+  z-index: 2;
+  transition: 0.3s;
+}
+
+.pd-arrow:hover {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+/* LEFT / RIGHT POSITION */
+.pd-arrow.left {
+  left: 10px;
+}
+
+.pd-arrow.right {
+  right: 10px;
+}
+
+/* IMAGE */
+
+.pd-main-img {
+  width: 100%;
+  border-radius: 6px;
+  height: 450px;
+  object-fit: contain;
+  background-color: rgba(255, 255, 255, 0.527); 
+  border-radius: 10px;
+}
+
+.pd-thumbs {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.pd-thumbs img {
+  width: 60px;
+  height: 70px;
+  object-fit: cover;
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.pd-thumbs img.active {
+  opacity: 1;
+  border: 2px solid black;
+}
+
+/* TEXT */
+
+
+  .pd-title {
+  font-size: 30px;
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  color: #2c2c2c;
+  text-transform: capitalize;
+}
+
+.pd-tagline {
+  font-size: 13px;
+  color: #888;
+  margin-top: 4px;
+}
+
+
+.pd-badge {
+  background: #e6f000;
+  padding: 5px 12px;
+  border-radius: 20px;
+  display: inline-block;
+  margin: 10px 0;
+  font-size: 13px;
+}
+
+.pd-rating {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.pd-price {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.current-price {
+  font-size: 26px;
+  font-weight: 600;
+  color: #111;
+}
+
+.old-price {
+  text-decoration: line-through;
+  color: #888;
+  font-size: 16px;
+}
+
+.discount-badge {
+  background: #c4540a;
+  color: white;
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 6px;
+}
+
+.pd-subtext {
+  font-size: 13px;
+  color: #777;
+}
+.pd-trust {
+  font-size: 13px;
+  color: #4caf50;
+  margin-top: 5px;
+}
+/* SIZE */
+
+.size-options {
+  display: flex;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.size-options button {
+  border: 1px solid #ddd;
+  padding: 6px 12px;
+  background: white;
+  cursor: pointer;
+}
+
+/* QTY */
+
+/* LABEL */
+
+.qty-label {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 6px;
+  font-weight: 500;
+}
+
+/* BOX */
+.qty-box {
+  display: inline-flex;
+  align-items: center;
+  background: #fff;
+  border-radius: 10px;
+  border: 1px solid #e5e5e5;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+}
+.qty-box:hover {
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+}
+
+/* BUTTONS */
+.qty-box button {
+  width: 36px;
+  height: 36px;
+  border: none;
+  background: #f8f8f8;
+  font-size: 18px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+/* HOVER EFFECT */
+.qty-box button:hover {
+  background: #eee;
+}
+
+/* ACTIVE CLICK */
+.qty-box button:active {
+  transform: scale(0.95);
+}
+
+/* NUMBER */
+.qty-box span {
+  width: 40px;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 500;
+  color: #222;
+}
+
+/* PREMIUM TOUCH */
+.qty-box button:first-child {
+  border-right: 1px solid #eee;
+}
+
+.qty-box button:last-child {
+  border-left: 1px solid #eee;
+}
+
+/* BUTTONS */
+
+.btn-outline {
+  width: 100%;
+  padding: 14px;
+  background: white;
+  border: 1px solid #ddd;
+  margin-top: 15px;
+}
+
+.btn-black {
+  width: 100%;
+  padding: 14px;
+  background: black;
+  color: white;
+  border: none;
+  margin-top: 10px;
+}
+
+.btn-red {
+  width: 100%;
+  padding: 14px;
+  background: #0f9731;
+  color: white;
+  border: none;
+  margin-top: 10px;
+}
+
+/* EXTRA */
+
+.pd-extra {
+  margin: 15px 0;
+  font-size: 14px;
+}
+
+/* DESCRIPTION */
+
+.pd-desc {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #555;
+}
+
+/* ACCORDION */
+
+.pd-accordion .item {
+  padding: 15px 0;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+}
+
+.accordion-content {
+  padding: 10px 0;
+  color: #555;
+  font-size: 14px;
+  transition: max-height 0.9s ease;
+}
+.accordion-content li {
+  font-size: 14px;
+  margin-bottom: 7px;
+  text-transform: capitalize;
+  margin-left: 20px;
+  
+}

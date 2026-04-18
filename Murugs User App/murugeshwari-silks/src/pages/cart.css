@@ -1,0 +1,103 @@
+.cart-container {
+  padding: 40px;
+}
+
+.cart-items {
+  margin-top: 20px;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border-bottom: 1px solid #ddd;
+  padding: 15px 0;
+}
+
+.cart-item img {
+  width: 80px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.item-details {
+  flex: 1;
+}
+
+.remove-btn {
+  background: crimson;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.cart-summary {
+  margin-top: 30px;
+  text-align: right;
+}
+.qty-box-btn-remove {
+  margin-left: 100px;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.checkout-btn {
+  background: #8b0000;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+.cart-footer {
+  padding: 16px;
+  border-top: 1px solid #eee;
+  background: #fff;
+}
+
+/* TOTAL BOX */
+.total {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+/* Label */
+.total span {
+  font-size: 13px;
+  color: #777;
+}
+
+/* Subtotal */
+.total p {
+  font-size: 14px;
+  color: #333;
+  margin: 0;
+}
+
+/* Free shipping message */
+.total p:nth-child(3) {
+  color: #e91e63;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+/* Shipping row */
+.total p:last-of-type {
+  font-size: 14px;
+  color: #444;
+}
+
+/* Final total */
+.total h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 8px;
+  color: #000;
+}
+
+/* Highlight FREE */
+.total strong {
+  color: green;
+}

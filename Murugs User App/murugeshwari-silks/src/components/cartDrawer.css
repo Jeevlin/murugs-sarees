@@ -1,0 +1,203 @@
+/* OVERLAY */
+
+.cart-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.3s;
+}
+
+.cart-overlay.show {
+  opacity: 1;
+  pointer-events: all;
+}
+
+/* DRAWER */
+
+.cart-drawer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 90%;
+  background: #fff;
+  border-radius: 12px 12px 0 0;
+  display: flex;
+  flex-direction: column;
+  transform: translateY(100%);
+  transition: 0.3s;
+}
+
+.cart-overlay.show .cart-drawer {
+  transform: translateY(0);
+}
+
+/* DESKTOP */
+
+@media (min-width: 768px) {
+  .cart-drawer {
+    width: 400px;
+    height: 100%;
+    border-radius: 0;
+    transform: translateX(100%);
+  }
+
+  .cart-overlay.show .cart-drawer {
+    transform: translateX(0);
+  }
+}
+
+/* HEADER */
+
+.cart-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  font-weight: 600;
+  border-bottom: 1px solid #eee;
+}
+
+/* OFFER */
+
+.cart-offer {
+  padding: 10px;
+  font-size: 13px;
+  color: green;
+  text-align: center;
+}
+
+/* ITEMS */
+
+.cart-items {
+  flex: 1;
+  overflow-y: auto;
+  padding: 10px;
+}
+
+.cart-item {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.cart-item img {
+  width: 70px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.item-info {
+  flex: 1;
+}
+
+.item-info h4 {
+  font-size: 14px;
+}
+
+.qty-box {
+  display: flex;
+  gap: 8px;
+  margin-top: 5px;
+}
+
+.qty-box button {
+  width: 25px;
+  height: 25px;
+}
+
+/* REMOVE */
+
+.remove {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* FOOTER */
+
+.cart-footer {
+  padding: 15px;
+  border-top: 1px solid #eee;
+}
+
+.total {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.checkout-btn {
+  width: 100%;
+  padding: 14px;
+  background: black;
+  color: white;
+  border: none;
+}
+.view-cart-btn {
+  margin-top: 10px;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  background: rgb(138, 93, 93);
+  cursor: pointer;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.view-cart-btn:hover {
+  background: #f5f5f5;
+}
+.cart-footer {
+  padding: 16px;
+  border-top: 1px solid #eee;
+  background: #fff;
+}
+
+/* TOTAL BOX */
+.total {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+/* Label */
+.total span {
+  font-size: 13px;
+  color: #777;
+}
+
+/* Subtotal */
+.total p {
+  font-size: 14px;
+  color: #333;
+  margin: 0;
+}
+
+/* Free shipping message */
+.total p:nth-child(3) {
+  color: #e91e63;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+/* Shipping row */
+.total p:last-of-type {
+  font-size: 14px;
+  color: #444;
+}
+
+/* Final total */
+.total h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 8px;
+  color: #000;
+}
+
+/* Highlight FREE */
+.total strong {
+  color: green;
+}

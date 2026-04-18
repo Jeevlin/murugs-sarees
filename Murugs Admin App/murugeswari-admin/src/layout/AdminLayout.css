@@ -1,0 +1,130 @@
+.admin-layout{
+  display:flex;
+}
+
+/* main content (mobile first) */
+
+.admin-main{
+  width:100%;
+  display:flex;
+  flex-direction:column;
+}
+
+/* topbar */
+
+.topbar{
+  height:60px;
+  background:white;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:0 20px;
+  box-shadow:0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* hamburger */
+
+.menu-btn{
+  font-size:22px;
+  border:none;
+  background:none;
+  cursor:pointer;
+  display: block;
+}
+
+/* admin name */
+
+.admin-name{
+  font-weight:bold;
+}
+
+/* logout */
+
+.logout-btn{
+  background:#ef4444;
+  color:white;
+  border:none;
+  padding:6px 12px;
+  border-radius:4px;
+  cursor:pointer;
+}
+
+/* content */
+
+.admin-content{
+  padding:20px;
+  background:#f4f6f9;
+  min-height:calc(100vh - 60px);
+}
+/* OVERLAY */
+.logout-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* MODAL BOX */
+.logout-modal {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  width: 300px;
+  text-align: center;
+  animation: pop 0.3s ease;
+}
+
+/* ANIMATION */
+@keyframes pop {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* BUTTONS */
+.modal-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.cancel-btn {
+  padding: 8px 15px;
+  border: none;
+  background: #ddd;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.confirm-btn {
+  padding: 8px 15px;
+  border: none;
+  background: #b03060;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* desktop layout */
+
+@media (min-width:768px){
+
+  .admin-main{
+    margin-left:220px; /* sidebar width */
+  }
+
+  .admin-content{
+    padding:30px;
+  }
+  .menu-btn{
+    display:none;
+  }
+}

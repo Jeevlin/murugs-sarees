@@ -1,0 +1,149 @@
+/* Container */
+.category-container {
+  max-width: 600px;
+  margin: auto;
+}
+
+.category-container h1 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: 600;
+}
+/* MAIN INPUT SECTION */
+.category-input {
+  margin-left: 70px;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+/* IMAGE SIDE */
+.image-upload {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image-upload img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+}
+
+/* PLACEHOLDER */
+.image-placeholder {
+  width: 120px;
+  height: 120px;
+  background: #f3f3f3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  color: #999;
+  font-size: 14px;
+}
+
+/* UPLOAD BUTTON */
+.upload-btn {
+  margin-top: 10px;
+  padding: 6px 12px;
+  background: #b03060;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+/* FORM SIDE */
+.category-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.category-form input {
+  padding: 10px;
+  width: 220px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+}
+
+.category-form button {
+  padding: 10px;
+  background: #b03060;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.category-form button:hover {
+  background: #8b1e4a;
+}
+/* Input section */
+
+
+/* Category list */
+.category-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.category-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f9f9f9;
+  padding: 12px 14px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  transition: 0.2s;
+}
+
+.category-list li:hover {
+  background: #f1f1f1;
+}
+
+/* Delete button */
+.category-list button {
+  background: #ff4d4d;
+  border: none;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.category-list button:hover {
+  background: #e60000;
+}
+.category-list {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 10px;
+}
+
+.category-item {
+  background: #fff;
+  padding: 10px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+
+/* Mobile responsive */
+@media (max-width: 480px) {
+  .category-input {
+    flex-direction: column;
+  }
+
+  .category-input button {
+    width: 100%;
+  }
+}

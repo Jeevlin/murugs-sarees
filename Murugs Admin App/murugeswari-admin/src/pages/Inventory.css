@@ -1,0 +1,134 @@
+.inventory-container{
+  width:100%;
+}
+
+/* header */
+
+.inventory-header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom:20px;
+}
+
+.inventory-actions{
+  display:flex;
+  gap:10px;
+}
+
+/* search */
+
+.search-input{
+  padding:8px 10px;
+  border:1px solid #ddd;
+  border-radius:5px;
+}
+
+/* add button */
+
+.add-btn{
+  background:#2563eb;
+  color:white;
+  border:none;
+  padding:8px 14px;
+  border-radius:5px;
+  cursor:pointer;
+}
+
+/* table */
+
+.inventory-table{
+  width:100%;
+  border-collapse:collapse;
+  background:white;
+  border-radius:10px;
+  overflow:hidden;
+  box-shadow:0 4px 10px rgba(0,0,0,0.08);
+}
+
+/* header */
+
+.inventory-table thead{
+  background:#f3f4f6;
+    position: sticky;
+  top: 0;
+  background: white;
+ z-index: 0;
+}
+
+.inventory-table th,
+.inventory-table td{
+  padding:14px;
+  text-align:left;
+  border-bottom:1px solid #eee;
+  vertical-align:middle;
+}
+
+/* images */
+
+.inventory-table img{
+  width:60px;
+  height:60px;
+  object-fit:cover;
+  border-radius:6px;
+}
+
+/* row hover */
+
+.inventory-row{
+  cursor:pointer;
+  transition:background 0.2s;
+}
+
+.inventory-row:hover{
+  background:#f9fafb;
+}
+
+/* actions */
+
+.actions{
+  display:flex;
+  gap:10px;
+}
+
+/* action buttons */
+
+.inventory-table .edit-btn,
+.inventory-table .delete-btn{
+  border:1px solid #070707;
+  padding:6px 8px;
+  border-radius:4px;
+  cursor:pointer;
+  color:rgb(211, 45, 128);
+  background-color: rgb(236, 238, 144);
+
+}
+
+
+.inventory-table .edit-btn:hover{
+  background:#06d918;
+}
+
+.inventory-table .delete-btn:hover{
+  background:#dc2626;
+}
+.load-more-container {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.load-more-container button {
+  padding: 10px 20px;
+  background: #b03060;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.modal h3 {
+  margin-bottom: 10px;
+}
+
+.modal p {
+  margin-bottom: 15px;
+}

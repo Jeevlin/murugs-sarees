@@ -1,0 +1,141 @@
+/* 💬 FLOAT BUTTON */
+.chat-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 58px;
+  height: 58px;
+  background: linear-gradient(135deg, #25d366, #1ebe5d);
+  color: white;
+  font-size: 26px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  z-index: 99999999999999999;
+  transition: all 0.3s ease;
+  .chat-float {
+  border: 3px solid red;
+}
+}
+
+/* hover */
+.chat-float:hover {
+  transform: scale(1.1);
+}
+
+/* pulse animation */
+.chat-float::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: rgba(37, 211, 102, 0.4);
+  animation: pulse 1.5s infinite;
+  z-index: -1;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); opacity: 0.6; }
+  70% { transform: scale(1.6); opacity: 0; }
+  100% { transform: scale(1); opacity: 0; }
+}
+
+/* 📦 CHAT BOX */
+.chat-box {
+  position: fixed;
+  bottom: 90px;
+  right: 20px;
+  width: 280px;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(12px);
+  border-radius: 16px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+  z-index: 9999;
+  animation: slideUp 0.35s ease;
+}
+
+/* animation */
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* 🟢 HEADER */
+.chat-header {
+  background: linear-gradient(135deg, #25d366, #1ebe5d);
+  color: white;
+  padding: 12px 14px;
+  font-weight: 500;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* close button */
+.chat-header button {
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* 💬 BODY */
+.chat-body {
+  padding: 14px;
+}
+
+/* 🤖 MESSAGE */
+.bot-msg {
+  background: #f4f4f4;
+  padding: 10px 12px;
+  border-radius: 12px;
+  font-size: 14px;
+  margin-bottom: 12px;
+  display: inline-block;
+  line-height: 1.5;
+}
+
+/* 🔘 OPTIONS */
+.chat-body button {
+  width: 100%;
+  margin-top: 8px;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  background: #f7f7f7;
+  font-size: 13px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* hover */
+.chat-body button:hover {
+  background: #ececec;
+  transform: translateY(-1px);
+}
+
+/* 📱 MOBILE */
+@media (max-width: 480px) {
+  .chat-box {
+    width: 90%;
+    right: 5%;
+    bottom: 80px;
+  }
+
+  .chat-float {
+    bottom: 16px;
+    right: 16px;
+  }
+}

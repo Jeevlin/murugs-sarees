@@ -1,0 +1,90 @@
+.dashboard-container{
+  padding:20px;
+  width:100%;
+  min-height:100vh;
+  background:#f4f6f9;
+}
+
+.dashboard-title{
+  font-size:24px;
+  margin-bottom:20px;
+}
+
+/* Cards layout (mobile first) */
+
+.dashboard-cards{
+  display:grid;
+  grid-template-columns:1fr;
+  gap:20px;
+}
+
+/* Card */
+
+.dashboard-card{
+  background:white;
+  padding:20px;
+  border-radius:10px;
+  box-shadow:0 4px 12px rgba(0,0,0,0.1);
+  cursor:pointer;
+  transition:all 0.2s ease;
+}
+
+.dashboard-card:hover{
+  transform:translateY(-5px);
+}
+
+/* Card title */
+
+.card-title{
+  font-size:16px;
+  color:#666;
+}
+
+/* Card value */
+
+.card-value{
+  font-size:28px;
+  font-weight:bold;
+  margin-top:10px;
+}
+
+/* Colored borders */
+
+.dashboard-card:nth-child(1){border-left:5px solid #4f46e5;}
+.dashboard-card:nth-child(2){border-left:5px solid #f59e0b;}
+.dashboard-card:nth-child(3){border-left:5px solid #10b981;}
+.dashboard-card:nth-child(4){border-left:5px solid #ef4444;}
+.dashboard-card:nth-child(5){border-left:5px solid #1db5cf;}
+.dashboard-card:nth-child(6){border-left:5px solid #16812d;}
+.chart-container {
+  margin-top: 30px;
+  background: white;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  transition: 0.3s;
+}
+
+.chart-container h2 {
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+/* Tablet */
+
+@media (min-width:600px){
+  .dashboard-cards{
+    grid-template-columns:repeat(2,1fr);
+  }
+}
+
+/* Desktop */
+
+@media (min-width:900px){
+  .dashboard-cards{
+    grid-template-columns:repeat(4,1fr);
+  }
+
+  .dashboard-container{
+    padding:30px;
+  }
+}

@@ -1,0 +1,48 @@
+/* Reset basic browser styles */
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  background:#f4f6f9;
+  color:#333;
+}
+
+/* Links */
+
+a{
+  text-decoration:none;
+  color:inherit;
+}
+
+/* Buttons */
+
+button{
+  cursor:pointer;
+  font-family: inherit;
+}
+
+/* Input styling */
+
+input{
+  font-family: inherit;
+  outline:none;
+}
+
+/* Admin layout helper */
+
+.admin-layout{
+  display:flex;
+}
+
+/* Content area beside sidebar */
+
+.admin-content{
+  padding:30px;
+  width:100%;
+  min-height:100vh;
+}

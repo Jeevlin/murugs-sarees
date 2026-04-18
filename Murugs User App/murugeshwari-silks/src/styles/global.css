@@ -1,0 +1,101 @@
+:root {
+  /* 🔴 Primary Brand (Saree feel) */
+  --primary: #8b0000;
+  --primary-light: #b22222;
+  --primary-hover: #a80000;
+
+  /* 🟢 Secondary (WhatsApp / success) */
+  --secondary: #25d366;
+  --secondary-hover: #1ebe5d;
+
+  /* ⚪ Neutrals (VERY IMPORTANT) */
+  --bg-main: #ffffff;
+  --bg-soft: #faf7f5;
+  --bg-card: #ffffff;
+
+  /* 🖤 Text */
+  --text-main: #222;
+  --text-sub: #555;
+  --text-light: #888;
+
+  /* 🟡 Accent */
+  --accent: #facc15;
+
+  /* 🟢 Discount */
+  --success: #2e7d32;
+
+  /* 🧱 Borders & shadows */
+  --border: #e5e5e5;
+  --shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/* Base (mobile first) */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  background: #ffffff;
+  color: #333;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+/* App layout (FULL WIDTH always) */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Main content grows */
+.main-content {
+  flex: 1;
+}
+
+/* Inner container (ONLY for content) */
+.container {
+  width: 100%;
+  padding: 0 16px;   /* mobile spacing */
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+  .container {
+    padding: 0 24px;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+}
+
+/* Navbar & Footer always full width */
+.navbar {
+  width: 100%;
+}
+
+.footer {
+  width: 100%;
+}
+
+/* Links & buttons */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+}

@@ -1,0 +1,119 @@
+/* 🌸 SECTION */
+.contact-section {
+  padding: 60px 16px;
+  background: linear-gradient(to bottom, #fffaf7, #ffffff);
+}
+
+/* 📦 CONTAINER */
+.contact-container {
+  max-width: 600px;
+  margin: auto;
+  text-align: center;
+}
+
+/* 🏷 TITLE */
+.contact-container h2 {
+  font-size: 26px;
+  font-family: 'Playfair Display', serif;
+  color: #c4540a;
+  margin-bottom: 8px;
+}
+
+.contact-subtitle {
+  color: #666;
+  margin-bottom: 30px;
+}
+
+/* 📩 FORM */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #c4540a;
+}
+
+.contact-form textarea {
+  min-height: 120px;
+  resize: none;
+}
+
+/* 🔘 BUTTON */
+.contact-form button {
+  padding: 12px;
+  background: #ad2816;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact-form button:hover {
+  background: #8e1f12;
+}
+
+/* 💬 WHATSAPP */
+.contact-whatsapp {
+  margin-top: 30px;
+}
+
+.contact-whatsapp p {
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.contact-whatsapp button {
+  padding: 10px 20px;
+  background: #25d366;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.contact-whatsapp button:hover {
+  background: #1ebe5d;
+}
+
+/* 💻 TABLET */
+@media (min-width: 768px) {
+  .contact-section {
+    padding: 80px 20px;
+  }
+
+  .contact-container h2 {
+    font-size: 32px;
+  }
+}
+.success-popup {
+  position: fixed;
+  bottom: 30px;
+  right: 260px;
+  background: #16a34a;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 14px;
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}

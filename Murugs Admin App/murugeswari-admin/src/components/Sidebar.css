@@ -1,0 +1,100 @@
+/* Sidebar (mobile first = hidden by default) */
+
+.sidebar{
+  width:220px;
+  height:100vh;
+  background:#111827;
+  color:white;
+  padding:20px;
+  position:fixed;
+  left:0;
+  top:0;
+  transform:translateX(-220px);
+  transition:transform 0.3s ease;
+}
+
+/* when sidebar opens */
+
+.sidebar.active{
+  transform:translateX(0);
+}
+
+/* title */
+
+.sidebar-title{
+  font-size:22px;
+  margin-bottom:35px;
+  font-weight:bold;
+}
+
+/* header */
+
+.sidebar-header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom:30px;
+}
+
+/* menu */
+
+.sidebar-menu{
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+}
+
+/* menu item */
+
+.menu-item{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  padding:12px;
+  border-radius:6px;
+  text-decoration:none;
+  color:#d1d5db;
+  transition:0.2s;
+}
+
+.menu-item:hover{
+  background:#1f2937;
+  color:white;
+}
+
+/* active page */
+
+.menu-item.active{
+  background:#2563eb;
+  color:white;
+}
+
+/* icon */
+
+.menu-icon{
+  font-size:16px;
+}
+
+/* close button */
+
+.close-btn{
+  background:none;
+  border:none;
+  color:white;
+  font-size:20px;
+  cursor:pointer;
+}
+
+/* Desktop */
+
+@media (min-width:768px){
+
+  .sidebar{
+    transform:translateX(0);
+  }
+
+  .close-btn{
+    display:none;
+  }
+
+}
