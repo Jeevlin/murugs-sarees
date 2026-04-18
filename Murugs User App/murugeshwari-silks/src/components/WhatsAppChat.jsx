@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./WhatsappChat.css";
+import "./whatsappChat.css";
 
 function WhatsAppChat() {
   const [open, setOpen] = useState(false);
