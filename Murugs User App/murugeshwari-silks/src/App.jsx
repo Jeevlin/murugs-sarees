@@ -9,7 +9,7 @@ import Categoryproducts from "./pages/Categoryproducts";
 import ProductDetails from "./pages/Productdetails";
 import Contact from "./pages/contact";
     import "./styles/global.css";
-import WhatsAppChat from "./components/WhatsappChat";
+import WhatsAppChat from "./components/WhatsAppChat";
 import Cart from "./pages/Cart";
 import { useState } from "react";
 
