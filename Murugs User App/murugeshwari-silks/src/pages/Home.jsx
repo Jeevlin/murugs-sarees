@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import Categorycard from "./Categorycard";
 import "./Home.css";
-import About from "./about";
+import About from "./About";
 import ReviewSlider from "./Reviewslider";
 import { useNavigate } from "react-router-dom";
 
