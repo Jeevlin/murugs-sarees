@@ -17,7 +17,7 @@ function App() {
       <Routes>
 
         {/* PUBLIC */}
-        <Route path="/login" element={<Login />} />
+        <Route path="/" element={<Login />} />
 
         {/* 🔒 PROTECTED GROUP */}
         <Route element={<ProtectedRoute />}>
