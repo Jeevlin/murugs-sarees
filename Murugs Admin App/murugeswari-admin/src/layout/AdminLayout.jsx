@@ -1,6 +1,6 @@
 import { useState } from "react"
 import { Outlet } from "react-router-dom"
-import Sidebar from "../components/sidebar"
+import Sidebar from "../components/Sidebar"
 import { useAuth } from "../context/AuthContext"
 
 import "./AdminLayout.css"
