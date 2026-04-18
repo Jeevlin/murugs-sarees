@@ -7,7 +7,7 @@ import CategoryCard from "./pages/Categorycard";
 import ReviewSlider from "./pages/Reviewslider";
 import Categoryproducts from "./pages/Categoryproducts";
 import ProductDetails from "./pages/Productdetails";
-import Contact from "./pages/Contact";
+import Contact from "./pages/contact";
     import "./styles/global.css";
 import WhatsAppChat from "./components/WhatsAppChat";
 import Cart from "./pages/Cart";
