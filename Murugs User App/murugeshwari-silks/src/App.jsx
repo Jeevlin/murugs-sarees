@@ -1,16 +1,16 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
-import Home from "./pages/home";
+import Home from "./pages/Home";
 import About from "./pages/About";
 import Footer from "./components/Footer";
 import CategoryCard from "./pages/Categorycard";
 import ReviewSlider from "./pages/Reviewslider";
 import Categoryproducts from "./pages/Categoryproducts";
-import ProductDetails from "./pages/productdetails";
+import ProductDetails from "./pages/Productdetails";
 import Contact from "./pages/contact";
     import "./styles/global.css";
-import WhatsAppChat from "./components/whatsappChat";
-import Cart from "./pages/cart";
+import WhatsAppChat from "./components/WhatsappChat";
+import Cart from "./pages/Cart";
 import { useState } from "react";
 
 function App() {
