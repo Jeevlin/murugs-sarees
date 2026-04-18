@@ -10,7 +10,7 @@ import ProductDetails from "./pages/Productdetails";
 import Contact from "./pages/contact";
     import "./styles/global.css";
 import WhatsAppChat from "./components/WhatsAppChat";
-import Cart from "./pages/Cart";
+import Cart from "./pages/cart";
 import { useState } from "react";
 
 function App() {
