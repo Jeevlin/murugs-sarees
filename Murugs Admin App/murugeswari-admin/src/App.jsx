@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Login from "./pages/Login";
 import Dashboard from "./pages/Dashboard";
 import Orders from "./pages/Orders";
-import Inventory from "./pages/inventory";
+import Inventory from "./pages/Inventory";
 import Reviews from "./pages/Reviews";
 import AddCategory from "./pages/AddCategory";
 import ProtectedRoute from "./route/ProtectedRoute";
