@@ -7,7 +7,7 @@ import Inventory from "./pages/Inventory";
 import Reviews from "./pages/Reviews";
 import AddCategory from "./pages/AddCategory";
 import ProtectedRoute from "./route/ProtectedRoute";
-import AdminLayout from "./layout/Adminlayout";
+import AdminLayout from "./layout/AdminLayout";
 
 import "./App.css";
 
