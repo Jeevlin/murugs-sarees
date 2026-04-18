@@ -1,5 +1,5 @@
 import { useCart } from "../context/CartContext";
-import "./CartDrawer.css";
+import "./cartDrawer.css";
 import { addDoc, collection, Timestamp } from "firebase/firestore";
 import { db } from "../firebase";
 import { useNavigate } from "react-router-dom";
