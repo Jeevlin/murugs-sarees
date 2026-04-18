@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./OrderModal.css";
+import "./orderModal.css";
 
 function OrderModal({ isOpen, onClose, onConfirm }) {
   const [name, setName] = useState("");
