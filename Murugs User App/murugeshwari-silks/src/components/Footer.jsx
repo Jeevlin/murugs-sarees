@@ -12,7 +12,7 @@ function Footer() {
         </div>
 
         <div className="footer-right">
-          <p>📞 +91 82488 95476</p>
+          <p>📞 +91 6381395476 </p>
           <p>📸 @Murugeswarisarees</p>
           <p>🛍 WhatsApp Orders Available</p>
         </div>

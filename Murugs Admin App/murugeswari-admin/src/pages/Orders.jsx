@@ -157,6 +157,7 @@ const fetchMoreOrders = async () => {
     </button>
   ))}
 </div>
+<div className="table-wrapper">
       <table className="orders-table">
         <thead>
           <tr>
@@ -256,7 +257,7 @@ const fetchMoreOrders = async () => {
     </tr>
   ))}
 </tbody>
-      </table>
+      </table></div>
       {lastDoc && (
   <div className="load-more-container">
     <button onClick={fetchMoreOrders} disabled={loadingMore}>

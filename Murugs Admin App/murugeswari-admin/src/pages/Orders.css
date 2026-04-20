@@ -94,3 +94,50 @@
   color: white;
   border-color: black;
 }
+.table-wrapper{
+  width:100%;
+  overflow-x:auto;
+}
+@media (max-width: 768px){
+
+  .orders-container{
+    padding:10px;
+  }
+
+  /* table spacing reduce */
+  .orders-table th,
+  .orders-table td{
+    padding:8px;
+    font-size:13px;
+  }
+
+  /* images smaller */
+  .orders-table img{
+    width:40px;
+    height:40px;
+  }
+
+  /* status badge smaller */
+  .status{
+    font-size:11px;
+    padding:4px 8px;
+  }
+
+  /* filter buttons scrollable */
+  .status-filter{
+    overflow-x:auto;
+    flex-wrap:nowrap;
+    padding-bottom:5px;
+  }
+
+  .status-filter button{
+    flex:0 0 auto; /* prevents shrinking */
+    font-size:12px;
+    padding:5px 10px;
+  }
+
+  /* load more button full width */
+  .load-more-container button{
+    width:100%;
+  }
+}

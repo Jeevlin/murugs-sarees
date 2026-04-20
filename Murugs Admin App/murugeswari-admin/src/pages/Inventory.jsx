@@ -210,6 +210,8 @@ return(
 </div>
   {loading ? <p>Loading products...</p> : (
 
+<div className="table-wrapper">
+
 <table className="inventory-table">
 
     <thead>
@@ -293,7 +295,8 @@ return(
 
     </tbody>
 
-  </table>)}
+  </table></div>
+)}
   {lastDoc && (
   <div className="load-more-container">
     <button onClick={fetchMoreProducts} disabled={loadingMore}>

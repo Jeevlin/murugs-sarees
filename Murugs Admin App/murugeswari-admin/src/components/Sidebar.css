@@ -11,6 +11,7 @@
   top:0;
   transform:translateX(-220px);
   transition:transform 0.3s ease;
+  z-index:1000;
 }
 
 /* when sidebar opens */
