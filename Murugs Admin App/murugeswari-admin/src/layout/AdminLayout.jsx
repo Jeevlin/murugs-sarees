@@ -2,10 +2,12 @@ import { useState } from "react"
 import { Outlet } from "react-router-dom"
 import Sidebar from "../components/Sidebar"
 import { useAuth } from "../context/AuthContext"
+import { useNavigate } from "react-router-dom"
 
 import "./AdminLayout.css"
 
 function AdminLayout(){
+ const navigate = useNavigate();
 
  const [open,setOpen] = useState(false)
  const { logout } = useAuth()
