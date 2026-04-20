@@ -12,12 +12,12 @@ function ProtectedRoute() {
 
   // ❌ not logged in
   if (!user) {
-    return <Navigate to="/login" replace />;
+    return <Navigate to="/" replace />;
   }
 
   // ❌ not admin
   if (user.email !== ADMIN_EMAIL) {
-    return <Navigate to="/login" replace />;
+    return <Navigate to="/" replace />;
   }
 
   // ✅ allowed
