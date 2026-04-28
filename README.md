@@ -1,12 +1,14 @@
-🛍️ Saree Retailing Web Application (Admin + User App)
+Murugs Sarees - Retailing Web Application (Admin + User App)
 
 A complete saree retailing web application consisting of a User Shopping Interface and an Admin Dashboard, built to manage products, track orders, and enable seamless ordering through WhatsApp.
+
 
 ---
 
 🌐 Overview
 
-This project is designed for saree businesses to showcase collections online and manage inventory efficiently.
+Designed for small businesses to manage orders through WhatsApp instead of complex payment gateways.
+
 Customers can browse products and place orders via WhatsApp, while the admin can monitor and control the entire system.
 
 ---
